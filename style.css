@@ -1,0 +1,147 @@
+@font-face 
+{
+    font-family: 'archisticonormal';
+    src: url('font/Archistico_Simple-webfont.eot');
+    src: url('font/Archistico_Simple-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Archistico_Simple-webfont.woff2') format('woff2'),
+         url('font/Archistico_Simple-webfont.woff') format('woff'),
+         url('font/Archistico_Simple-webfont.ttf') format('truetype'),
+         url('font/Archistico_Simple-webfont.svg#archisticonormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+header
+{
+	border: 3px black solid;
+	border-radius: 55px;
+	height: 200px;
+	margin-top:2%;
+}
+
+.principal
+{
+	width: 95%;
+	margin: auto;
+	background-color: aquamarine;
+	border-radius: 55px;
+}
+
+
+aside
+{
+
+		background-color: #706b64; 
+
+		border-radius: 55px;
+
+		padding: 15px; 
+
+		color: white;
+
+		text-align: justify;
+
+		
+	    width: 250px ; /* largeur du contenu */
+	 
+		
+
+}
+
+.bloc
+{
+	margin-left: 20px; /* SERT A SPACER LES DEUX BLOCS */
+    flex: 6;
+}
+
+div img
+{
+	margin-right: 2%;
+	margin-top: 1%;
+	float: right;
+	border-radius: 15px;
+}
+
+.decoupe
+{
+	display: flex;
+	margin-top: 5%;
+	border-radius: 55px;
+	border: 3px black solid;
+
+}
+
+.decoupe ul
+{
+	list-style-image: url('ico_liensexterne.png'); /* les puces dans les ul */
+    padding-left: 2px;
+}
+
+.decoupe div
+{
+	padding: 3%; /* l'espace entre les colonnes */
+}
+
+body
+{
+	background-image: url("fond1cv.jpg"); 
+	font-family: archisticonormal;
+	color: black;
+}
+
+h3
+{
+	color: blue;
+	clear: both;
+}
+
+h1
+{
+	text-align: center;
+	text-shadow: 1px 1px 0px yellow;
+
+}
+
+
+.bordure
+{
+	text-align: center;
+
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1024px)
+{
+	.principal
+	{
+		background-color:rgb(175, 136, 214);
+		width: auto;
+	}
+
+	.decoupe
+	{
+		
+		flex-direction: column;
+	}
+	
+	aside
+	{
+		display: none;
+	}
+	.bloc
+	{
+		margin-left: 0px;
+	}
+
+	header
+	{
+		margin-top:0%;
+	}
+
+	body
+	{
+		font-family: 'Times New Roman', Times, serif;
+	}
+}
